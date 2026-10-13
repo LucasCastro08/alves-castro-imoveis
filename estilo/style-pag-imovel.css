@@ -1,0 +1,143 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap');
+
+
+:root {
+    --verde-principal: #10261A;
+    --branco-principal: #F1F1F1;
+    --fonte-serifada: "Cinzel", serif;
+    --cor-botao: #10261a31;
+    --cor-borda: rgba(0, 0, 0, 0.655);
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--branco-principal);
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 2px;
+    line-height: 1.3;
+}
+
+/*CSS Header*/
+header {
+    font-family: "Cinzel", serif;
+    background-color: var(--verde-principal);
+    font-family: var(--fonte-serifada);
+}
+
+#info-header {
+    color: var(--branco-principal);
+    height: 150px;
+
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    justify-items: center;
+    align-items: center;
+}
+#info-header img {
+    width: 80px;
+    margin-left: auto;
+}
+#info-header h1 {
+    font-size: 2.5em;
+    font-weight: normal;
+}
+header #menu {
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.185);
+}
+header #menu ul {
+    list-style-type: none;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+}
+header #menu ul li {
+    padding: 10px 20px;
+}
+header #menu ul li a {
+    text-decoration: none;
+    color: var(--branco-principal);
+}
+header #menu ul li a:hover {
+    text-decoration: underline;
+}
+header #menu ul li p {
+    color: var(--branco-principal);
+}
+/*Fim CSS Header*/
+
+main {
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: 10px 1fr 2.5fr 10px;
+    grid-template-rows: 10px 1fr auto 10px;
+    gap: 20px;
+}
+main #info {
+    box-shadow: inset 0px 0px 2px var(--cor-borda);
+    font-family: var(--fonte-serifada);
+    font-size: 1.2em;
+    font-weight: bold;
+    grid-area: 2 / 2 / 3 / 3;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+main #imagens {
+    grid-area: 2 / 3 / 3 / 4;
+}
+#info, #desc /*config semelhantes*/{
+    padding: 15px;
+    text-align: justify;
+}
+main #desc {
+    letter-spacing: 1px;
+    box-shadow: inset 0px 0px 2px var(--cor-borda);
+    grid-area: 3 / 2 / 4 / 4;
+}
+#desc h2 {
+    margin-bottom: 8px;
+    font-size: 1.3em;
+}
+
+/*CSS Footer*/
+footer {
+    width: 100%;
+    height: 40px;
+    background-color: var(--verde-principal);
+    font-family: var(--fonte-serifada);
+    color: var(--branco-principal);
+
+    position: relative;
+}
+footer p {
+    text-align: center;
+    padding: 10px;
+}
+footer span {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: .6em;
+    padding: 5px;
+
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+footer span a {
+    color: var(--branco-principal);
+    text-decoration: none;
+}
+footer span a:hover {
+    text-decoration: underline;
+}
+/*Fim CSS Footer*/
