@@ -1,0 +1,14 @@
+Passo a passo para postar casa:
+- copiar pag-imovel-modelo
+- renomear com o nome do imovel
+- criar article no iframe-imoveis
+	-- config botões
+	-- config link para pagina-imovel
+	--config imagem principal
+-config pagina do imovel
+	--config nome
+	--config slide com imagens
+	--config section info
+		---config informações
+		---config preço(se tiver)
+	--config section desc

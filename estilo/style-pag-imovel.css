@@ -130,6 +130,9 @@ main #desc {
     margin-bottom: 20px;
     font-size: 1.3em;
 }
+#desc ul {
+    margin-bottom: 5px;
+}
 #desc ul li {
     list-style: none;
 }

@@ -27,7 +27,7 @@ body {
 
 #imoveis {
     display: grid;
-    grid-template-columns: repeat(10, 100vw);
+    grid-template-columns: repeat(20, 100vw);
     grid-template-rows: 100vh;
 }
 #imoveis article.imovel {
