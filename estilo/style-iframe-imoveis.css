@@ -46,6 +46,28 @@ align-items: center;
     flex-flow: column nowrap;
     justify-content: center;
 }
+#imoveis article.imovel div.info-imovel a {
+    display: grid;
+    text-decoration: none;
+}
+#imoveis article.imovel div.info-imovel a > p {
+    color: var(--branco-principal);
+    text-decoration: none;
+    grid-area: 1 / 1 / 1 / 1;
+    align-self: center;
+    justify-self: center;
+    opacity: 0;
+    z-index: 1;
+    transition: opacity 0.3s;
+    width: fit-content;
+    padding: 10px;
+}
+#imoveis article.imovel div.info-imovel a:hover > p {
+    opacity: 1;
+    background-color: rgba(0, 0, 0, 0.502);
+    border-radius: 16px;
+}
+
 #imoveis article.imovel div.info-imovel a img {
     grid-area: 1 / 1 / 2 / 2;
     box-shadow: 0px 0px 5px var(--verde-principal);
@@ -56,14 +78,16 @@ align-items: center;
     transition: filter 0.3s, border 0.3s;
     display: block;
 }
-#imoveis article.imovel div.info-imovel a img:hover {
+
+#imoveis article.imovel div.info-imovel a:hover img {
     border: 8px double var(--verde-principal);
     filter: brightness(0.5);
 }
+
 #imoveis article.imovel div.info-imovel p {
     text-align: center;
     font-size: 1.7em;
-    margin: 20px 0px;
+    margin-bottom: 10px;
 }
 
 
