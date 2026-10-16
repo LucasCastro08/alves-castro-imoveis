@@ -138,31 +138,39 @@ main #sobre-mim #foto-perfil img {
 /*CSS Footer*/
 footer {
     width: 100%;
-    height: 40px;
     background-color: var(--verde-principal);
     font-family: var(--fonte-serifada);
     color: var(--branco-principal);
 
-    position: relative;
+    display: flex;
+    flex-flow: column nowrap;
 }
-footer p {
-    text-align: center;
+footer #info-footer {
+    height: 40px;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+}
+footer #info-footer p {
     padding: 10px;
+    font-size: 0.9em;
 }
-footer span {
+footer #direitos-reservados {
+    height: 20px;
+    background-color: black;
+}
+footer #direitos-reservados {
     font-family: Arial, Helvetica, sans-serif;
     font-size: .6em;
     padding: 5px;
-
-    position: absolute;
-    bottom: 0;
-    right: 0;
+    text-align: center;
 }
-footer span a {
+footer #direitos-reservados a {
     color: var(--branco-principal);
     text-decoration: none;
 }
-footer span a:hover {
+footer #direitos-reservados a:hover {
     text-decoration: underline;
 }
 /*Fim CSS Footer*/
