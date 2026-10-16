@@ -133,6 +133,9 @@ main #desc {
     margin-bottom: 20px;
     font-size: 1.3em;
 }
+#desc p {
+    padding-bottom: 20px;
+}
 #desc ul {
     margin-bottom: 5px;
 }
