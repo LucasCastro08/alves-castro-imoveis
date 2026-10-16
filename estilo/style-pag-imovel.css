@@ -83,17 +83,20 @@ main {
 }
 main #info {
     box-shadow: inset 0px 0px 2px var(--cor-borda);
-    font-family: var(--fonte-serifada);
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 1.2em;
-    font-weight: bold;
     grid-area: 2 / 2 / 3 / 3;
-    text-align: justify;
     line-height: 2;
 
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-between;
     align-items: center;
+}
+main #info p.preço {
+    font-family: var(--fonte-serifada);
+    font-size: 1.4em;
+    font-weight: bold;
 }
 main #imagens {
     grid-area: 2 / 3 / 3 / 4;
