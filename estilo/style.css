@@ -194,9 +194,12 @@ footer #direitos-reservados a:hover {
     main #sobre-mim #info-sobre-mim {
         padding-bottom: 0px;
     }
+    main #sobre-mim #info-sobre-mim p {
+    max-width: 100%;
+    }
     main #sobre-mim #foto-perfil img {
-        width: 400px;
-        height: 400px;
+        width: 300px;
+        height: 300px;
         object-fit: cover;
         padding-top: 0px;
         box-shadow: none;
