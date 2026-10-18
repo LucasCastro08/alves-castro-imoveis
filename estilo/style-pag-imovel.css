@@ -40,9 +40,12 @@ header {
     justify-items: center;
     align-items: center;
 }
-#info-header img {
+#info-header img#main-logo {
     width: 80px;
     margin-left: auto;
+}
+#info-header img#query-logo {
+    display: none;
 }
 #info-header h1 {
     font-size: 2.5em;
@@ -185,3 +188,15 @@ footer #direitos-reservados a:hover {
     text-decoration: underline;
 }
 /*Fim CSS Footer*/
+
+
+@media screen and (max-width: 830px){
+    header #info-header img#main-logo, h1 {
+        display: none;
+    }
+    header #info-header img#query-logo {
+        width: 60vw;
+        display: block;
+        grid-column: 2 / 3;
+    }
+}
